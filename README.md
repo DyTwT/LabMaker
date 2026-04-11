@@ -20,11 +20,59 @@ Sistema web desenvolvido para gerenciamento de agendamentos e solicitações em 
 
 ---
 ## 🧱 Tecnologias utilizadas
-##1. Frontend:
+1. Frontend:
 - HTML5
 - CSS3 (TailwindCSS)
 - JavaScript (Vanilla JS)
-##2. Backend:
+2. Backend:
 - PHP
 - Banco de Dados:
 - MySQL
+
+---
+## 📁 Estrutura do projeto
+```bash
+.
+labmaker/
+│
+├── frontend/
+│   ├── login.html
+│   ├── cadastro.html
+│   ├── index.html
+|   ├── cadlog.css
+|   ├── cadlog.js
+|   ├── logo.png
+|   ├── sair.png
+│   ├── style.css
+│   └── script.js
+│
+├── backend/
+│   ├── adm.php
+│   ├── atualizar_status.php
+│   ├── buscar_agendamentos.php
+│   ├── conexao.php
+│   ├── deletar_agendamento.php
+│   ├── deletar_horario.php
+│   ├── gerenciar_slots.php
+│   ├── getslots.php
+│   ├── listar_slots.php
+│   ├── login.php
+|   ├── logout.php
+|   ├── salvar_agendamentos.php
+|   ├── salvar_solicitacao.php
+│   └── verificar.php
+│
+├── uploads/
+│   └── (arquivos enviados pelos usuários)
+```
+
+---
+##📌 Observações
+- O sistema diferencia usuários comuns e administradores
+- O Kanban permite controle de fluxo das solicitações
+- Upload de arquivos é salvo na pasta `/uploads`
+
+---
+## 👨‍💻 Autora
+
+Desenvolvido por Andressa de Pinho Barreto 💻✨
