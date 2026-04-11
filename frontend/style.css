@@ -1,0 +1,105 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; 
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body { 
+    height: 100%; 
+    background-color: #0f172a;
+    color: #f1f5f9; 
+    overflow: hidden; 
+}
+
+.fade-in { 
+    animation: fadeIn 0.3s ease-out; 
+}
+
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(10px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+.kanban-col { 
+    min-width: 280px; 
+    max-width: 320px;
+    height: fit-content;
+}
+
+.border-received { border-left-color: #f59e0b !important; } 
+.border-analysis { border-left-color: #8b5cf6 !important; } 
+.border-doing    { border-left-color: #3b82f6 !important; } 
+.border-done     { border-left-color: #10b981 !important; } 
+
+.text-received { color: #f59e0b; }
+.text-analysis { color: #8b5cf6; }
+.text-doing    { color: #3b82f6; }
+.text-done     { color: #10b981; }
+
+.slot-btn { 
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.slot-btn:active { 
+    transform: scale(0.95); 
+}
+
+.input-custom {
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    width: 100%;
+    transition: border-color 0.2s;
+}
+
+.input-custom:focus {
+    border-color: #22d3ee;
+    outline: none;
+}
+
+::-webkit-scrollbar { 
+    height: 6px; 
+    width: 6px; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb { 
+    background: rgba(148, 163, 184, 0.2); 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(34, 211, 238, 0.4); 
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 640px) {
+    .kanban-col {
+        min-width: 85vw; 
+    }
+    
+    header h1 {
+        font-size: 1.1rem;
+    }
+    
+    .p-6 {
+        padding: 1.25rem;
+    }
+}
+
+.glass {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}

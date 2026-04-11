@@ -1,0 +1,186 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Fundo */
+body {
+    min-height: 100vh;
+    background: #0f172a; /* preto azulado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container */
+section {
+    background: #111827; /* cinza escuro */
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(139, 92, 246, 0.2); /* roxo leve */
+    animation: fadeIn 0.4s ease;
+}
+
+/* Formulário */
+.formulario_login {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.formulario_login label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #d1d5db;
+}
+
+/* Inputs */
+.formulario_login input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    background: #020617;
+    color: #e5e7eb;
+    outline: none;
+    transition: 0.2s;
+}
+
+/* Placeholder */
+.formulario_login input::placeholder {
+    color: #6b7280;
+}
+
+/* Foco (azul) */
+.formulario_login input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+}
+
+/* Botão */
+.formulario_login button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Hover */
+.formulario_login button:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
+
+/* Texto */
+p {
+    margin-top: 15px;
+    color: #9ca3af;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Link (amarelo) */
+p a {
+    color: #f59e0b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Container do input com ícone */
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Ajusta o input */
+.input-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    width: 100%;
+    padding-right: 45px;
+}
+
+/* Ícone estilo Google */
+.toggle-senha {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #9ca3af;
+    transition: 0.2s;
+}
+
+.toggle-senha:hover {
+    color: #3b82f6; /* azul */
+}
+
+/* Hover */
+.toggle-senha:hover {
+    color: #f59e0b; /* amarelo */
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 480px) {
+    section {
+        padding: 20px;
+    }
+
+    .formulario_login input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .formulario_login button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        max-width: 420px;
+    }
+}
