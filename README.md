@@ -67,7 +67,7 @@ labmaker/
 ```
 
 ---
-##📌 Observações
+## 📌 Observações
 - O sistema diferencia usuários comuns e administradores
 - O Kanban permite controle de fluxo das solicitações
 - Upload de arquivos é salvo na pasta `/uploads`
