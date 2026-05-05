@@ -5,7 +5,7 @@ Sistema web desenvolvido para gerenciamento de agendamentos e solicitações em 
 ---
 ## 🚀 Funcionalidades
 
-##👤 Usuário comum
+## 👤 Usuário comum
 - Cadastro e login
 - Criar solicitações com descrição e anexo
 - Visualizar status das solicitações (Kanban)
